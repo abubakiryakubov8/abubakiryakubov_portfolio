@@ -2,7 +2,8 @@
 
 Personal portfolio site. Hand-written HTML, CSS and JavaScript — no framework, no build step.
 
-**Live:** https://abubakiryakubov8.github.io/abubakiryakubov_portfolio/
+**Live:** https://abubakiryakubov8.github.io/
+**Mirror:** https://abubakiryakubov8.github.io/abubakiryakubov_portfolio/
 
 ## Stack
 
