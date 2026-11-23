@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abubakir Yakubov — AI &amp; Embedded Systems</title>
+<meta name="description" content="Portfolio of Abubakir Yakubov — Computer Engineering student at Gachon University. Python, machine learning, data structures, embedded systems.">
+<meta name="author" content="Abubakir Yakubov">
+<meta name="theme-color" content="#03070a">
+<meta property="og:title" content="Abubakir Yakubov — AI &amp; Embedded Systems">
+<meta property="og:description" content="Computer Engineering student at Gachon University. Machine learning, data structures, edge AI.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&family=Chakra+Petch:wght@300;400;600&display=swap">
+<link rel="stylesheet" href="assets/css/neon.css">
+<script>
+  document.documentElement.classList.remove("no-js");
+  document.documentElement.classList.add("js");
+</script>
+</head>
+<body>
+
+<!-- ===================== opening sequence ===================== -->
+<div class="boot" id="boot" role="dialog" aria-label="Loading portfolio" aria-modal="true">
+  <div class="boot__inner">
+    <p class="boot__tag">// secure node · seongnam · kr</p>
+    <pre class="boot__log" id="boot-log"></pre>
+    <div class="boot__bar"><span id="boot-fill"></span></div>
+    <p class="boot__pct"><span id="boot-pct">0</span>% · <span id="boot-step">initialising uplink</span></p>
+    <button class="boot__skip" id="boot-skip" type="button">skip intro ↵</button>
+  </div>
+  <div class="boot__grid" aria-hidden="true"></div>
+</div>
+
+<a class="skip" href="#main">skip to content</a>
+<canvas id="rain" class="rain" aria-hidden="true"></canvas>
+<div class="scanlines" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<!-- ===================== chrome ===================== -->
+<header class="nav" id="nav">
+  <a class="nav__logo" href="#top" aria-label="Abubakir Yakubov, home">
+    <span class="nav__mark">AY</span>
+    <span class="nav__text">abubakir<em>.dev</em></span>
+  </a>
+  <nav class="nav__links" aria-label="Sections">
+    <a href="#about">about</a>
+    <a href="#skills">skills</a>
+    <a href="#work">work</a>
+    <a href="#contact">contact</a>
+  </nav>
+  <div class="nav__tools">
+    <button class="nav__rain" id="rain-toggle" type="button" aria-pressed="true" title="Toggle matrix rain">
+      <span aria-hidden="true">▮▯</span> rain
+    </button>
+    <a class="nav__gh" href="https://github.com/abubakiryakubov8" target="_blank" rel="noopener">
+      <svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.42 7.42 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+      <span class="nav__gh-label">github</span>
+    </a>
+  </div>
+  <div class="nav__progress" id="progress" aria-hidden="true"></div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== hero ===================== -->
+  <section class="hero" id="top">
+    <div class="hero__glow" aria-hidden="true"></div>
+
+    <div class="hero__grid">
+      <div class="hero__copy">
+        <p class="tag"><span class="tag__dot" aria-hidden="true"></span>open to a 1-year internship · ai &amp; embedded</p>
+
+        <h1 class="hero__name" data-glitch="ABUBAKIR">
+          ABUBAKIR
+          <span data-glitch="YAKUBOV">YAKUBOV</span>
+        </h1>
+
+        <p class="hero__role">
+          <span class="prompt" aria-hidden="true">&gt;</span>
+          <span id="typed" class="hero__typed"></span><span class="caret" aria-hidden="true"></span>
+        </p>
+
+        <p class="hero__lede">
+          Computer Engineering student at <b>Gachon University</b>. I train and evaluate
+          models in <b>Python</b>, reason about data structures, and write the documentation
+          that makes the results land. Building toward <b>edge AI</b>, microcontrollers and
+          sensor-driven demos.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--solid" href="#work">view work <span aria-hidden="true">→</span></a>
+          <a class="btn" href="https://github.com/abubakiryakubov8" target="_blank" rel="noopener">github</a>
+          <a class="btn btn--ghost" href="mailto:mcdissian8@gmail.com">hire me</a>
+        </div>
+
+        <dl class="hero__stats">
+          <div><dt>best r²</dt><dd><span data-count="0.90" data-decimals="2">0.90</span></dd></div>
+          <div><dt>mse</dt><dd><span data-count="2.74" data-decimals="2">2.74</span></dd></div>
+          <div><dt>projects</dt><dd><span data-count="6">06</span></dd></div>
+          <div><dt>languages</dt><dd><span data-count="4">04</span></dd></div>
+        </dl>
+      </div>
+
+      <div class="idcard" aria-label="Identity card">
+        <div class="idcard__frame">
+          <div class="idcard__corner idcard__corner--tl" aria-hidden="true"></div>
+          <div class="idcard__corner idcard__corner--tr" aria-hidden="true"></div>
+          <div class="idcard__corner idcard__corner--bl" aria-hidden="true"></div>
+          <div class="idcard__corner idcard__corner--br" aria-hidden="true"></div>
+
+          <div class="idcard__screen">
+            <span class="idcard__mono" id="idcard-mono" aria-hidden="true">AY</span>
+            <img class="idcard__img" id="idcard-img" src="assets/img/portrait.jpg" alt="Portrait of Abubakir Yakubov" hidden>
+            <div class="idcard__scan" aria-hidden="true"></div>
+            <div class="idcard__hud" aria-hidden="true">
+              <span>REC ●</span><span>60 FPS</span>
+            </div>
+          </div>
+
+          <ul class="idcard__meta">
+            <li><span>id</span>202537291</li>
+            <li><span>loc</span>Seongnam · KR</li>
+            <li><span>stack</span>python · c · js</li>
+            <li><span>status</span><b>online</b></li>
+          </ul>
+        </div>
+        <p class="idcard__foot" aria-hidden="true">gachon university · computer engineering</p>
+      </div>
+    </div>
+
+    <a class="hero__scroll" href="#about" aria-label="Scroll to about">
+      <span aria-hidden="true">scroll</span>
+      <i aria-hidden="true"></i>
+    </a>
+  </section>
+
+  <!-- ===================== about ===================== -->
+  <section class="section" id="about">
+    <div class="section__head reveal">
+      <p class="kicker"><span>01</span> identity</p>
+      <h2 class="section__title">whoami</h2>
+    </div>
+
+    <div class="about">
+      <div class="term reveal">
+        <div class="term__bar">
+          <span class="term__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="term__path">~/abubakir/profile.json</span>
+        </div>
+        <pre class="term__body"><span class="c-key">{</span>
+  <span class="c-key">"name"</span>: <span class="c-str">"Abubakir Yakubov"</span>,
+  <span class="c-key">"role"</span>: <span class="c-str">"Computer Engineering student"</span>,
+  <span class="c-key">"school"</span>: <span class="c-str">"Gachon University · Seongnam, KR"</span>,
+  <span class="c-key">"focus"</span>: [<span class="c-str">"machine learning"</span>, <span class="c-str">"data structures"</span>, <span class="c-str">"edge AI"</span>],
+  <span class="c-key">"seeking"</span>: <span class="c-str">"1-year internship · AI &amp; embedded systems"</span>,
+  <span class="c-key">"languages"</span>: { <span class="c-key">"uz"</span>: <span class="c-str">"native"</span>, <span class="c-key">"ru"</span>: <span class="c-str">"fluent"</span>, <span class="c-key">"en"</span>: <span class="c-str">"fluent"</span>, <span class="c-key">"ko"</span>: <span class="c-str">"learning"</span> }
+<span class="c-key">}</span></pre>
+      </div>
+
+      <div class="about__side">
+        <article class="panel reveal">
+          <h3 class="panel__title">education</h3>
+          <p class="panel__lead">B.Eng. Computer Engineering</p>
+          <p class="panel__sub">Gachon University · Seongnam, South Korea</p>
+          <ul class="chips">
+            <li>big data analysis</li>
+            <li>data structures</li>
+            <li>deep learning</li>
+            <li>korean nlp</li>
+          </ul>
+        </article>
+
+        <article class="panel reveal">
+          <h3 class="panel__title">coursework highlights</h3>
+          <ul class="list">
+            <li><b>Deep learning</b> — CNNs, RNNs, time-series forecasting</li>
+            <li><b>Data structures</b> — AVL trees, hash tables, XOR linked lists</li>
+            <li><b>Korean NLP</b> — pipeline built on the Okt tokenizer</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== skills ===================== -->
+  <section class="section" id="skills">
+    <div class="section__head reveal">
+      <p class="kicker"><span>02</span> loadout</p>
+      <h2 class="section__title">skills</h2>
+    </div>
+
+    <div class="skills">
+      <article class="panel panel--skill reveal">
+        <h3 class="panel__title">languages &amp; data</h3>
+        <div class="meters">
+          <div class="meter" style="--v:88%"><span>python</span><i></i></div>
+          <div class="meter" style="--v:62%"><span>c / c++</span><i></i></div>
+          <div class="meter" style="--v:74%"><span>javascript / ts</span><i></i></div>
+          <div class="meter" style="--v:70%"><span>sql · postgresql</span><i></i></div>
+        </div>
+      </article>
+
+      <article class="panel panel--skill reveal">
+        <h3 class="panel__title">ai / ml</h3>
+        <div class="meters">
+          <div class="meter" style="--v:85%"><span>model training</span><i></i></div>
+          <div class="meter" style="--v:80%"><span>evaluation</span><i></i></div>
+          <div class="meter" style="--v:76%"><span>cnn / rnn</span><i></i></div>
+          <div class="meter" style="--v:72%"><span>prophet forecasting</span><i></i></div>
+        </div>
+      </article>
+
+      <article class="panel panel--skill reveal">
+        <h3 class="panel__title">tools</h3>
+        <ul class="chips chips--wide">
+          <li>git</li><li>github</li><li>node.js</li><li>react</li>
+          <li>ai-assisted dev</li><li>postgresql</li><li>linux</li>
+        </ul>
+      </article>
+
+      <article class="panel panel--skill reveal">
+        <h3 class="panel__title">documentation</h3>
+        <ul class="chips chips--wide">
+          <li>technical write-ups</li><li>user guides</li><li>results reports</li><li>presentation decks</li>
+        </ul>
+      </article>
+    </div>
+
+    <ul class="languages reveal" aria-label="Languages">
+      <li><span>uzbek</span><b>native</b><i style="--v:100%"></i></li>
+      <li><span>russian</span><b>fluent</b><i style="--v:90%"></i></li>
+      <li><span>english</span><b>fluent</b><i style="--v:88%"></i></li>
+      <li><span>korean</span><b>learning</b><i style="--v:45%"></i></li>
+    </ul>
+  </section>
+
+  <!-- ===================== work ===================== -->
+  <section class="section" id="work">
+    <div class="section__head reveal">
+      <p class="kicker"><span>03</span> archive</p>
+      <h2 class="section__title">selected work</h2>
+    </div>
+
+    <div class="work">
+      <article class="card card--big reveal">
+        <div class="card__top">
+          <span class="card__idx">01</span>
+          <span class="card__badge">machine learning</span>
+        </div>
+        <h3>Advertising Sales Prediction</h3>
+        <p class="card__desc">
+          End-to-end pipeline from data preparation to model training and evaluation with
+          linear regression. Documented methodology and results in a deck built for both
+          technical and non-technical readers.
+        </p>
+        <dl class="card__metrics">
+          <div><dt>r²</dt><dd>0.90</dd></div>
+          <div><dt>mse</dt><dd>2.74</dd></div>
+        </dl>
+        <ul class="chips"><li>python</li><li>scikit-learn</li><li>regression</li></ul>
+        <a class="card__link" href="https://github.com/abubakiryakubov8?tab=repositories" target="_blank" rel="noopener">browse repos <span aria-hidden="true">↗</span></a>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__top">
+          <span class="card__idx">02</span>
+          <span class="card__badge">time series</span>
+        </div>
+        <h3>Demand Forecasting &amp; Auto-Reorder</h3>
+        <p class="card__desc">
+          Prophet-based forecasting tool that turns predicted demand into reorder suggestions.
+          Being rebuilt as a portfolio system with exception handling and a proper Git workflow.
+        </p>
+        <ul class="chips"><li>python</li><li>prophet</li><li>git</li></ul>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__top">
+          <span class="card__idx">03</span>
+          <span class="card__badge">deep learning</span>
+        </div>
+        <h3>CNN / RNN &amp; Korean NLP</h3>
+        <p class="card__desc">
+          Coursework in big data analysis: trained and evaluated CNN and RNN models, read the
+          results through confusion matrices, and built a Korean NLP pipeline on the Okt tokenizer.
+        </p>
+        <ul class="chips"><li>cnn</li><li>rnn</li><li>okt</li></ul>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__top">
+          <span class="card__idx">04</span>
+          <span class="card__badge">data structures</span>
+        </div>
+        <h3>Hash Map Search Engine</h3>
+        <p class="card__desc">
+          A mini search engine built on a hash map — taking fundamentals like hashing and
+          collision handling into a practical retrieval problem.
+        </p>
+        <ul class="chips"><li>algorithms</li><li>hashing</li></ul>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__top">
+          <span class="card__idx">05</span>
+          <span class="card__badge">live site</span>
+        </div>
+        <h3>Web Programming Archive</h3>
+        <p class="card__desc">
+          Twelve modules of hand-written HTML, CSS and JavaScript — including an accessibility
+          audit and a performance audit — served on GitHub Pages.
+        </p>
+        <ul class="chips"><li>html</li><li>css</li><li>javascript</li></ul>
+        <a class="card__link" href="https://abubakiryakubov8.github.io/web-programming-course/" target="_blank" rel="noopener">open live site <span aria-hidden="true">↗</span></a>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__top">
+          <span class="card__idx">06</span>
+          <span class="card__badge">web app</span>
+        </div>
+        <h3>Task Manager</h3>
+        <p class="card__desc">
+          A deployed task manager built in JavaScript — state, DOM updates and persistence,
+          shipped on Vercel.
+        </p>
+        <ul class="chips"><li>javascript</li><li>vercel</li></ul>
+        <a class="card__link" href="https://task-manager-six-bay-76.vercel.app" target="_blank" rel="noopener">open demo <span aria-hidden="true">↗</span></a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== experience ===================== -->
+  <section class="section" id="experience">
+    <div class="section__head reveal">
+      <p class="kicker"><span>04</span> trace</p>
+      <h2 class="section__title">experience</h2>
+    </div>
+
+    <ol class="timeline">
+      <li class="reveal">
+        <p class="timeline__when">self-directed</p>
+        <h3>English Instructor · adult class</h3>
+        <p>
+          Designed a Speaking-First lesson structure: a 120-minute, 7-stage format with a
+          standardised two-page handout, argument framework and homework workflow. Produced ten
+          print-ready handouts in one consistent design.
+        </p>
+        <ul class="chips"><li>curriculum design</li><li>documentation</li><li>communication</li></ul>
+      </li>
+      <li class="reveal">
+        <p class="timeline__when">content production</p>
+        <h3>Short-form video · medical content</h3>
+        <p>
+          Produced and optimised short-form video for a medical content account — captioning
+          and pacing tuned for retention.
+        </p>
+        <ul class="chips"><li>editing</li><li>pacing</li><li>captions</li></ul>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ===================== contact ===================== -->
+  <section class="section section--contact" id="contact">
+    <div class="contact reveal">
+      <p class="kicker"><span>05</span> uplink</p>
+      <h2 class="contact__title">let's build<br><em>something that runs</em></h2>
+      <p class="contact__sub">
+        Looking for a one-year internship in AI and embedded systems — model training,
+        evaluation, documentation, and the sensor demos around them.
+      </p>
+
+      <div class="contact__actions">
+        <a class="btn btn--solid" href="mailto:mcdissian8@gmail.com?subject=Internship%20%C2%B7%20Abubakir%20Yakubov">open channel</a>
+        <a class="btn" href="https://github.com/abubakiryakubov8" target="_blank" rel="noopener">github profile</a>
+      </div>
+
+      <ul class="contact__list">
+        <li><span>mail</span><a href="mailto:mcdissian8@gmail.com">mcdissian8@gmail.com</a></li>
+        <li><span>tel</span><a href="tel:010-5846-2107">010-5846-2107</a></li>
+        <li><span>loc</span><p>Seongnam, South Korea</p></li>
+        <li><span>git</span><a href="https://github.com/abubakiryakubov8" target="_blank" rel="noopener">github.com/abubakiryakubov8</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>© <span data-year>2026</span> Abubakir Yakubov · hand-coded, no framework</p>
+  <p class="foot__meta">
+    <span class="foot__live"><i aria-hidden="true"></i> node online</span>
+    <span id="clock" class="foot__clock">--:--:-- KST</span>
+  </p>
+</footer>
+
+<script src="assets/js/matrix.js" defer></script>
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
